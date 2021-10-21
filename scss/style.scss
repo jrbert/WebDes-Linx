@@ -1,0 +1,177 @@
+$purple: #6E4B87;
+$yellow: #FEAF3D;
+$gray: #E5E5E5;
+
+body{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+ }
+ header{
+    width: 100%;
+    height: 381px;
+    background-image: url(../imgs/linx\ BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;    
+ }
+ .headText{
+    font-size: 36px;
+ }
+ .headParagraph{
+    font-size: 18px;
+ }
+ nav{
+    display: flex;
+    justify-content: center;
+ }
+ .navBar{
+    background-color: $yellow;
+    Width: 1081px;
+    Height: 85px;
+    Top: 437px;
+    Left: 179px;
+    border-radius: 8px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+ }
+ #txtSearch{
+    float: left;
+    background-color: white;
+    padding-left: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    width: 191px; 
+ }
+ #btnSearch{
+    border: none;
+    float: left;
+    height: 32px;
+    border-radius: 8px;
+    width: 70px;
+    font-weight: bold;
+    background: $purple;
+    color: white;
+ }
+ .selector{
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    align-items: center;
+ }
+ select{
+    float: left;
+    background-color: white;
+    padding-left: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    width: 191px;
+ }
+ .orderBy{
+    padding-right: 8px;
+ }
+ .navBarTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 876px;
+    height: 122px;
+    background-color: $gray;
+    border-radius: 8px;
+    flex-direction: column;
+    margin-top: 50px;
+ }
+ .barTwoContent{
+    width: 780px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: $purple;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+ }
+ .formContent{
+    width: 780px;
+ 
+ }
+ .formSpace{
+    display: flex;
+    flex-direction: row;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+ }
+ #formName{
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    width: 300px;
+    margin-right: 10px;
+ }
+ #formEmail{
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    width: 300px;
+    margin-right: 10px; 
+ }
+ #formBtn{
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    width: 200px;
+    background-color: $purple;
+    margin-top: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+ }
+ .preFooter{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+ }
+ .logo{
+    width: 234px;
+    height: 137px;
+ }
+ .info{
+    display: flex;
+    flex-direction: row;
+    Width: 1081px;
+ }
+ .txtInfo{
+    margin-left: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+ }
+ footer{
+    background-image: url(../imgs/linx\ foot.png);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    color: white;
+    margin-top: 50px;
+ }
+ .footerTxt{
+    padding-top: 10px;
+    padding-bottom: 10px;
+   }
