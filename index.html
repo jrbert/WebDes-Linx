@@ -8,6 +8,50 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
 <body>
-    <header><h2 class ="headText">Tarefas a fazer</h2> <p class ="headParagraph">Adicione e complete tarefas para organizar melhor a sua semana. :)</p></header>
+    <!--- Here is the header with the background image on CSS --->
+    <header><h2 class ="headText">Tarefas a fazer</h2> 
+        <p class ="headParagraph">Adicione e complete tarefas para organizar melhor a sua semana. :)</p>
+    </header>
+    <!--- Here is the first nav bar --->
+    <nav>
+        <div class ="navBar">
+            <div>
+                <input type="text" id="txtSearch" placeholder="Busque tarefas"/>
+                <button id="btnSearch">Buscar</button>
+            </div>
+            <div class ="selector">
+                <p class ="orderBy">Organizar por:</p>
+                <select name="select">
+                    <option value="valor1">Prazo</option>
+                    <option value="valor2">Ordem Alfabética</option>
+                    <option value="valor3">Data de Entrada</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <!--- Here is the cards --->
+    <!--- Here is the second nav bar --->
+    <nav>
+        <div class ="navBarTwo">
+            <div class ="barTwoContent">
+                <p>Quer receber dicas para organizar melhor a sua rotina? Cadastre-se!</p>
+            </div>
+            <div class ="formContent">
+                <div>
+                    <form class ="formSpace">
+                        <div>
+                            <label for="fname">Nome:</label><br>
+                            <input id ="formName" type="text" name="Nome"><br>
+                        </div>
+                        <div>    
+                            <label for="fname">Email:</label><br>
+                            <input id ="formEmail" type="email" name="email"><br>
+                        </div>
+                        <input id ="formBtn" type="submit" value="Cadastrar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
