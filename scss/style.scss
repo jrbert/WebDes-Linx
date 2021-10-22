@@ -14,6 +14,7 @@ body{
     width: 100%;
     height: 381px;
     background-image: url(../imgs/linx\ BG.png);
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -61,7 +62,7 @@ body{
  #btnSearch{
     border: none;
     float: left;
-    height: 32px;
+    height: 35px;
     border-radius: 8px;
     width: 70px;
     font-weight: bold;
@@ -92,8 +93,8 @@ body{
     padding-right: 8px;
  }
  .cardOrganizer{
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
  }
  .cardSection{
     display: flex;
@@ -108,43 +109,95 @@ body{
     justify-content: center;
     flex-direction: column;
     Width: 253px;
-    Height: 360px;
+    Height: auto;
     border-style: solid;
     border-color: rgb(0, 0, 0);
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 14px;
     margin-top: 20px;
- }
+    &:hover .btnCard{
+       display: block;
+    }
+  }
  .imgCard{
     margin-top: 20px;
     padding-left: 22px;
     padding-top: 10px;
- }
+  }
  .cardTxt{
     padding-left: 22px;
  }
-.cardTitle{
+ .cardTitle{
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 19px;
     font-weight: bold;
     color: #414141;
-}
-.task{
+ }
+ .task{
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
-}
-.deadline{
+ }
+ .deadline{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     font-weight: bold;
     color: orangered;
-}
-.dateInc{
+ }
+ .dateInc{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
-}
+ }
+ .btnCard{
+   display: none;
+   margin-left: 50px;
+   margin-bottom: 10px;
+ }
+ .conc{
+    border: none;
+    float: left;
+    height: 32px;
+    border-radius: 8px;
+    width: 150px;
+    font-weight: bold;
+    background: $purple;
+    color: white;
+    &:hover{
+       background-color: #370a57;
+       transition: 0.5s;
+   }
+ }
+ .chng{
+   margin-top: 5px;
+    border: none;
+    float: left;
+    height: 32px;
+    border-radius: 8px;
+    width: 150px;
+    font-weight: bold;
+    background: orangered;
+    color: white;
+    &:hover{
+       background-color: rgb(255, 17, 0);
+       transition: 0.5s;
+    }
+ }
+ #plus{
+   border: none;
+   float: left;
+   height: 40px;
+   border-radius: 8px;
+   width: 150px;
+   font-weight: bold;
+   background: $purple;
+   color: white;
+   margin-top: 20px;
+   &:hover{
+      background-color: #370a57;
+      transition: 0.5s;
+   }
+ }
  .navBarTwo{
     display: flex;
     justify-content: center;
