@@ -71,6 +71,10 @@ nav {
   background: #6E4B87;
   color: white;
 }
+#btnSearch:hover {
+  background-color: #370a57;
+  transition: 0.5s;
+}
 
 .selector {
   display: flex;
@@ -153,6 +157,10 @@ select {
   font-size: 12px;
   color: white;
   font-weight: bold;
+}
+#formBtn:hover {
+  background-color: #370a57;
+  transition: 0.5s;
 }
 
 .preFooter {
