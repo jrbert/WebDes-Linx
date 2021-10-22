@@ -91,6 +91,60 @@ body{
  .orderBy{
     padding-right: 8px;
  }
+ .cardOrganizer{
+   display: flex;
+   justify-content: center;
+ }
+ .cardSection{
+    display: flex;
+    justify-content: space-around;
+    Width: 1081px;
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 50px;
+ }
+ .card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    Width: 253px;
+    Height: 360px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    border-radius: 14px;
+    margin-top: 20px;
+ }
+ .imgCard{
+    margin-top: 20px;
+    padding-left: 22px;
+    padding-top: 10px;
+ }
+ .cardTxt{
+    padding-left: 22px;
+ }
+.cardTitle{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: #414141;
+}
+.task{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
+.deadline{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: orangered;
+}
+.dateInc{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
  .navBarTwo{
     display: flex;
     justify-content: center;
