@@ -2,6 +2,13 @@ $purple: #6E4B87;
 $yellow: #FEAF3D;
 $gray: #E5E5E5;
 
+@mixin for-phone-only {
+   @media (max-width: 767.98px) {@content;}
+}
+@mixin for-tablet-only {
+   @media (min-width: 767.98px) and (max-width: 1199.98) {@content;}
+}
+
 body{
     display: flex;
     width: 100%;
@@ -22,13 +29,32 @@ body{
     justify-content: center;
     align-items: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;    
+    color: white;   
+    @include for-phone-only {
+      width: 100%;
+      height: 150px;
+
+    } 
  }
  .headText{
     font-size: 36px;
+    @include for-phone-only {
+      font-size: 26px;
+      margin-top: 100px;
+     }
+ }
+ .paragraphSpace{
+   @include for-phone-only {
+      width: 290px;
+     }
  }
  .headParagraph{
     font-size: 18px;
+    @include for-phone-only {
+      font-size: 14px;
+      color: black;
+      margin-top: 30px;
+    }
  }
  nav{
     display: flex;
@@ -48,6 +74,13 @@ body{
     justify-content: space-evenly;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
+    @include for-phone-only {
+      margin-top: 40px;
+      width: 270px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+    }
  }
  #txtSearch{
     float: left;
@@ -57,7 +90,13 @@ body{
     border: none;
     border-radius: 8px;
     height: 32px;
-    width: 191px; 
+    width: 191px;
+    @include for-phone-only {
+      width: 130px;
+      height: 30px;
+      border-radius: 7px;
+    }
+     
  }
  #btnSearch{
     border: none;
@@ -72,12 +111,23 @@ body{
        background-color: #370a57;
        transition: 0.5s;
     }
+    @include for-phone-only {
+      width: 80px;
+      height: 33px;
+      border-radius: 7px;
+    }
  }
  .selector{
     display: flex;
     flex-direction: row;
     height: 25px;
     align-items: center;
+    @include for-phone-only {
+      width: 80px;
+      height: 33px;
+      border-radius: 7px;
+      padding: 0;
+    }
  }
  select{
     float: left;
@@ -88,9 +138,19 @@ body{
     border-radius: 8px;
     height: 32px;
     width: 191px;
+    @include for-phone-only {
+      width: 80px;
+      height: 33px;
+      border-radius: 7px;
+      padding: 0;
+    }
  }
  .orderBy{
     padding-right: 8px;
+    @include for-phone-only {
+       padding: 0;
+       font-size: 16px;
+    }
  }
  .cardOrganizer{
     display: flex;
